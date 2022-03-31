@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Enlaces Externos</h2>
+    <p>En HTML un enlace se crea con la etiqueta "a" (anchor) podemos convertir una parte de nuestro texto en un hiperviculo por ejemplo:
+        Haga click <a href="https://wrmx00.epimg.net/radio/imagenes/2021/06/29/sociedad/1624921713_710892_1624922565_noticia_normal_recorte1.jpg", target="_blank", rel="noopener">aqui</a> 
+        para ver imagenes de perritos bonitos. 
+    </p>
+    <p>El url del hiperviculo se tiene que poner como valor del atributo href = "" dentro de la etiqueta de apertura "a" y asi el contenido
+        de las etiquetas "a" se mostrara de color azul indicando que es un hipervinculo
+    </p> <!-- <a href = "Link"> aqui </a>-->
+    <p>Para que el hipervinculo nos abra el url en otra pestaña debemos ocupar el atributo target = "", este es un atriuto que nos va permitir especifiar donde queremos que se abra 
+        el enlace, su valores pueden ser:
+    </p>
+
+    <div>------------------------------------------</div>
+    <p>target = "_blank" ----> Abrira el hipervinculo en una pestaña nueva</p>
+    <p>target = "_self" -----> Abre el documento vinculado en la mismo pestaña en el que se hizo clic (esto es predeterminado)</p>
+    <p>target = "_parent" ---> Abre el documento vinculado en la pestaña principal.</p>
+    <p>target = "_top" ------> Abre el documento vinculado en el cuerpo completo de la ventana</p>
+    <p>target = "framename" -> Abre el documento vinculado en el iframe nombrado</p>
+
+    <div>------------------------------------------</div>
+    <div>------------------------------------------</div>
+    <p>El atriuto rel = "" El atributo especifica la relación entre el documento actual y el documento vinculado ya que los motores de busqueda pueden usar este
+        atributo para obtener información sobre un enlace.
+    </p>
+    <p>El atributo rel = "" nos permite prevenir un ataque llamado tabnabbing, este ataque hace que la pestaña de origen se reemplace para que el usuario ingrese
+        sus datos y eso es una brecha de seguridad.
+    </p>
+    <div>------------------------------------------</div>
+    <p>rel = "alternate" ---> Proporciona un enlace a una representación alternativa del documento (es decir, página impresa, traducida o reflejada)</p>
+    <p>rel = "author"    ---> Proporciona un enlace al autor del documento.</p>
+    <p>rel = "bookmark"  ---> URL permanente utilizada para marcar</p>
+    <p>rel = "external"  ---> Indica que el documento al que se hace referencia no forma parte del mismo sitio que el documento actual</p>
+    <p>rel = "help"      ---> Proporciona un enlace a un documento de ayuda.</p>
+    <p>rel = "license"   ---> Proporciona un enlace a la información de licencia del documento.</p>
+    <p>rel = "next"      ---> Proporciona un enlace al siguiente documento de la serie.</p>
+    <p>rel = "nofollow"  ---> Enlaces a un documento no respaldado, como un enlace pagado.("nofollow" es utilizado por Google para especificar que la araña de búsqueda de Google no debe seguir ese enlace)</p>
+    <p>rel = "noopener"  ---> Requiere que cualquier contexto de navegación creado siguiendo el hipervínculo no debe tener un contexto de navegación de apertura</p>
+    <p>rel = "noreferrer"---> Hace que el referente sea desconocido. No se incluirá ningún encabezado de referencia cuando el usuario haga clic en el hipervínculo</p>
+    <p>rel = "prev"      ---> El documento anterior en una selección</p>
+    <p>rel = "search"    ---> Enlaces a una herramienta de búsqueda del documento.</p>
+    <p>rel = "tag"       ---> Una etiqueta (palabra clave) para el documento actual </p>
+
+</body>
+</html>
