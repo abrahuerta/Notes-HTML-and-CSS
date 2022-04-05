@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Formularios (input)</h2>
+    <h3>type = "Text"</h3>
+    <p>Para crear formularios en html ocupamos la etiqueta "form" (formulario), se utiliza etiqueta de apertura y de cierre, un elemento que se puede tener dentro de un formulario
+        es un campo "input" este elemento lo usamos para obtener un valor o una respuesta del usuario, si queremos que el usuario escriba una respuesta o escriba un valor se puede asignar
+        el tipo de input como "text" que es un atributo del elemento input (osea va dentro de la etiqueta de apertura de input) se declara de la sig forma
+        <strong> type = "text"</strong>
+    </p>
+    <p>Se puede indicar dentro de la casilla un texto cualquiera, pero por lo general se ponen una pista al usuario para que sepa que tipo de texto puede ingresar
+        y se hace con el atributo <strong>placeholder (marcador de posicion) y se especificara dentro de la etiqueta de apertura del input </strong> en cuanto el usuario
+        comienze a ingresar texto este texto de pista se borrara automaticamente.
+    </p>
+    <form action="">
+        <input type="text", placeholder="Ingrese su nombre", required>
+        <button type="submit">Enviar</button>
+    </form>
+    <p>Si requieres que un campo de un formulario sea obligatorio (por ejemplo correo obligatorio, etc) lo especificamos en el atriubuto <strong>required</strong>
+        perteneciente al elemento <strong>input</strong>si enviamos el formulario sin contenido nos saldra un mensaje por defecto indicando que el campo esta vacio y requiere un valor </p>
+    <p>Para almacenar la respuesta o el valor introducido por el usuario se tiene que especificar dentro de la etiqueta de apertura del <strong>form</strong>
+        el atributo <strong>action = ""</strong> donde indicara el archivo en el servidor que se encargara de la gestion de los datos del programa. Si el archivo no existe aparecera
+        un error al enviar los datos.
+    </p>
+    <p>Los datos se envian con el elemento button este estara anidado dentro del form a la misma altura del input. En el atributo <strong>type =""</strong> indicaremos
+        que tipo de boton ocuparemos (en este caso submit ya que enviaremos datos). </p>
+    <hr>
+    <h3>type = "radio"</h3>
+    <p>Los formularios tipo radio son parecidos a los tipicos examenes de opción multiple, las cuales tienes que marcar la casilla de la opcioón a elegir
+        esto se hace poniendo dentro de la etiqueta de input el <strong>type = "radio"</strong>
+    </p>
+    <input type="radio"> Esta es una opción
+    <input type="radio"> Esta es otra opción
+    <p>Para que al hacer click al texto tambien se marque la casilla correspondiente existe el elemento label, este se va a superponer a nuestro input tipo radio
+        para que todo lo que este dentro del label se pueda seleccionar como si fuera la casilla
+    </p>
+    <label for="opcion"><input id="opcion", type="radio"> Esta es una opcion label</label>
+    <p>Para relacionar el contenido del input con el label se utiliza un <strong>Id para el input y especificarlo en el atributo "for" del label (en la etiqueta de apertura) </strong></p>
+    <p>Si marcamos las 2 casillas no hay ningun problema porque aun no hay ninguna restricción acerca de seleccionar las casillas, si queremos que el usuario pueda 
+        seleccionar unicamente una casilla los inputs de las opciones deben permanecer a un grupo de botones, esto se implementa de la siguiente forma: 
+        Dentro de cada label en su elemento "input", en la etiqueta de apertura se debe especificar el atributo <strong>name = "" </strong> con ese atributo todos los
+        los inputs que lleven ese nombre formaran parte de un grupo, y solo habra una opción correcta por cada grupo, entonces por si se selecciona 2 opciones una de estas se 
+        desmarcara automaticamente.
+    </p>
+    <label for="1"><input type="radio", id="1", name="Radios"> Esta es una opcion de un grupo</label>
+    <label for="2"><input type="radio", id="2", name="Radios"> Esta es otra opcion de un grupo</label>
+    <label for="3"><input type="radio", id="3", name="Radios"> Esta es una ultima opcion de un grupo</label>
+    <h3>Saltos de linea </h3>
+    <p>Para que cada elemento este en su propia linea y no esten una detras de la otra se puede hacer con el elemento <strong>br (break)</strong>,este elemeno representa
+        un salto de linea y no requiere de etiqueta de cierre, unicamente de apertura.</p>
+    <p>Esta es una linea de texto</p><br>
+    <p>Esta es ortra linea cortada por br </p><br>
+    <p>Linea final</p>
+</body>
+</html>
