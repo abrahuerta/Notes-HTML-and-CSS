@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Fundamentos CSS</h2><br>
+        <p>CSS significa por sus siglas <strong>C</strong>ascade <strong>S</strong>tyle <strong>S</strong>heets (Hojas de estilo en cascada)</p>
+        <p>En Html definimos la estructura y en css el estilo de esa estructura</p>
+        <p>CSS es un lenguaje basado en reglas esas reglas determinan el estilo que se aplicara a un elemento o a un grupo de elemenotos</p><br>
+    <h3>Opciones para definir reglas en CSS</h3>
+    <h4>Estilos en linea</h4>
+        <p>El estilo que vamos a asginarle a un elemento se añade directamente a la etiqueta de apertura de ese elemento en el archivo html, se coloca el attributo
+            style = "" y entre las comillas ("") se coloca la propiedad que se va a personalizar, en este caso es el color del texto.
+        </p>
+        <p><strong>Ejemplo:</strong></p>
+        <p style="color: blue">Este es un ejempolo de los estilos en linea :D </p>
+        <p>En este ejemplo estamos especificando que el color del texto sea azul</p><br>
+    <h4>Etiquetas de apertura y cierre "style"</h4>
+        <p>Cuando usamos el elemento "style" añadimos ese elemento en el head de nuestro html y dentro de ese elemento describimos el estilo que queremos asignarle 
+            a los elementos de la página; basicamente agrupamos las reglas bajo un mismo elemento en lugar de hacerlo elemento por elemento en su etiqueta correspondiente
+            y mejor agrupamos las reglas en un mismo bloque
+        </p>
+        <p><strong>Ejemplo:</strong></p>
+        <p>
+            head <br>
+            style <br>
+                h2 {color = "blue"; <br>
+            } <br>
+            /style <br>
+            /head <br>
+        </p>
+        <p>Donde h2 y los demas elementos contenidos en las etiquetas "style" son selectores css, esto nos permite que todos los elementos que tengan esa etiqueta se ele apliquen
+            en este caso el color azul
+        </p> <br>
+    <h4>Desde un Archivo .css</h4>
+        <p>En esta opción creamos un archivo css para definir el estilo e la página, este archivop contendra todas las reglas que se aplicaran al html,
+            basicamente tendremos un archivo html y un css. Para vincular el css con el html se hace con el elemento <strong>link</strong> en su atributo
+            <strong>href</strong> se coloca la ruta del archivo css.
+        </p>
+        <p>Ademas del elemento href también se especifica el atributo <strong>rel = ""</strong> este atriuto denomina la relación del documento vinculado al actual
+            en este caso seria de tipo <strong>"stylesheet"</strong>
+        </p>
+</body>
+</html>

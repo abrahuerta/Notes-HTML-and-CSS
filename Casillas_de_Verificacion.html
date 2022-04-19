@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Casillas de Verificación</h2><br>
+    <p>Las casillas de verificación (checkbox) se utilizan en el mismo elemento input pero ahora el atributo "type" lleva como valor = "checkbox" igual que como con los botones
+        de radio le tenemos que agregar un texto al checkbox para indicarle al usuario lo que va a validar.
+    </p>
+    <label><input type="checkbox">Este es un checkbox</label><br>
+    <p>En las checkbox si hay un grupo de estas a diferencia de los botones de radio, se podran marcar varias al mismo tiempo a demas se puede anidar en un label para que
+        al hacer click en el texto también se marque o se desmarque la casilla
+    </p>
+    <!-- Los  grupos reune los elementos input que tengan el mismo name -->
+    <label for="1"><input type="checkbox", id="1", name="opcion", checked>Opción 1</label>
+    <label for="2"><input type="checkbox", id="2", name="opcion">Opción 2</label>
+    <label for="3"><input type="checkbox", id="3", name="opcion">Opción 3</label>
+    <br>
+    <p>Algo muy util pora el UX es marcar una opción por defecto; tanto para los botones de radio como los checkbox eso se hace con el elemento checkd (marcado)
+        Este elemento nos ayuda marcando un elemento por defecto por cada grupo de botones. se agrega como atributo al elemento "input", en este caso el por defecto
+        es la opción 1
+    </p>
+
+</body>
+</html>
