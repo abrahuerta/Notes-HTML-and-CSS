@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link href="style_class.css", rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Selectores de Clase</h2>
+    <p>Los selectores de clase selecciona todos los elemento que tienen el atributo class especificado, una clase es un nombre que nosotros creamos y le asignamos a ciertos elemtenos
+        y luego con css podemos referirnos a esa clase y aplicar un estilo especifico a todos los elementos que tengan esa clase.
+    </p>
+    <p>Por ejemplo: Aplicarle un color de texto a los elementos de una lista ordenda y no ordenada al mismo tiempo.</p>
+    <ul class="pruebas">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <p><strong>Este problema se puede solucionar por elementos de tipo, pero se repetiria la misma regla ya que se haria un selector para ul y otro para ol, 
+        para evitar eso creamos una clase y asi aplicamos la regla a la clase y no al elemento en si.
+    </strong></p>
+    <p>Es conveniente usar selectores de clase cuando se tienen varios elementos de un mismo tipo, es decir, muchas listas en este caso, y solo queremos darle un estilo a 
+        unas cuantas y no a todas, si tenemos 4 listas ul, y queremos 2 de un estilo y las otras 2 de un estilo diferente, les asignamos una clase a cada par de listas
+        y se le configura su regla css a cada clase y ya esta.
+    </p>
+    <ol class="pruebas">
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ol>
+    <p>Para asignarle una clase a un elemento, simplemente en las etiquetas de apertura definimos el atributo class = "" </p>
+</body>
+</html>
