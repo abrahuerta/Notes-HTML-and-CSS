@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Selectores de atributo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="selector_de_atributo.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Selectores de atributo</h2>
+    <p>Los elementos pueden tener atributos que proporcionan un nivel de detalle mayor sore el elemento que delimitan. En CSS puedes utilizar selectores de atributos
+        para seleccionar elementos definidos con unos atributos determinados. <strong>Basicamente seleccionamos los elementos que contengan un determinado atributo</strong>
+    </p>
+    <h3>Selectores de precencia y valor</h3>
+    <p>Estos selectores permiten seleccionar un elemento solo  apartir de la presencia de un atributo o apartir de varias coincidencias diferentes con respecto al valor
+        del atributo
+    </p>
+    <div class = "b">
+        <table class="a">
+            <tr>
+                <th>Selector</th>
+                <th>Ejemplo</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>[attr]</td>
+                <td>a[title]</td>
+                <td>Relaciona elementos con un mismo nombre de atributo, attr (el valor que se indica entre corchetes).</td>
+            </tr>
+            <tr>
+                <td>[attr=value]</td>
+                <td>a[href="https://example.com"]</td>
+                <td>Relaciona elementos con un mismo nombre de atributo, attr, cuyo valor es exactamente el mismo, value (la cadena de caracteres que se indica entre corchetes).</td>
+            </tr>
+            <tr>
+                <td>[attr~=value]</td>
+                <td>p[class~="special"]</td>
+                <td>Relaciona los elementos con un mismo nombre de atributo, attr, cuyo valor es exactamente value, o los elementos con un mismo atributo attr que contiene uno o más valores
+                     de los cuales, al menos uno, coincide con value. Ten en cuenta que en una lista que incluya más de un valor, los distintos valores se separan con un espacio.</td>
+            </tr>
+            <tr>
+                <td>[attr|=value]</td>
+                <td>div[lang|="zh"]</td>
+                <td>Relaciona los elementos con un mismo nombre de atributo, attr, cuyo valor puede ser exactamente value o puede comenzar con value seguido inmediatamente por un guion.</td>
+            </tr>
+        </table>
+    </div>
+    <h3>Ejemplo aplicando un border-raduis = 50% de las imagenes que contengan el atributo alt</h3>
+    <div>
+        <img src="https://i.blogs.es/38e4d3/optim-dest/450_1000.jpg" alt="1", height="461", width="690">
+        <img src="https://www.picpolphoto.es/wp-content/uploads/2019/12/Los-Silos-1024x682.jpg" alt="2", height="461", width="690">
+        <img src="https://cdn.eso.org/images/thumb350x/potw2212a.jpg", height="461", width="690">
+    </div>
+    <h3>Ejemplo: hacer que todos los elementos "a" que lleven a un mismo enlace tengan un aspecto distinto al default</h3>
+    <a href="https://www.instagram.com/abrahamaharba1/">Insta del bellako</a><br>
+    <a href="https://www.instagram.com/abrahamaharba1/">Esto es un link</a><br>
+    <a href="https://www.instagram.com/abrahamaharba1/">lelelelele</a><br>
+    <a href="https://www.facebook.com/abraham.huerta.3726/">Este es otro link</a>
+</body>
+</html>

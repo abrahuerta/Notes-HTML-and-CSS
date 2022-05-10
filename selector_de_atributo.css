@@ -1,0 +1,17 @@
+.a{ 
+    border-collapse: separate; 
+}
+tr, td, th{ 
+    border: 1px solid grey;
+}
+.b{
+    width: 50%;
+}
+img[alt] {
+    border-radius: 50%;
+}
+a[href="https://www.instagram.com/abrahamaharba1/"]{
+    text-decoration: none;
+    color: darkgreen;
+    font-family: cursive;
+}
