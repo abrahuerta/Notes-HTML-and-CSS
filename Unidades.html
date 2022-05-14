@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Unidades</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Unidades.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Unidades Absolutas</h2>
+    <p>Son medidas que no están referenciadas a ninguna otra unidad, es decir, no dependen de un valor de referencia. Son unidades de medidas definidas por la física,
+         como el píxel, centímetro, metro, etc. Estas medidas son fijas y no cambian según las especificaciones del dispositivo. Este tipo de medición está indicado para
+         cuando conocemos a la perfección las características físicas y las configuraciones de las medias donde se exhibirán nuestros proyectos.
+    </p>
+    <h2>Unidades Relativas</h2>
+    <p>Estas medidas se calculan en base a otra unidad de medida definida, por ejemplo em y rem (Veremos más sobre estas dos medidas a lo largo de la publicación). 
+        El uso de ellas es más apropiado para que podamos hacer ajustes en diferentes dispositivos asegurando un layout consistente y fluido en distintas medias.
+
+        Debido a que estas medidas las calcula el navegador en base a otra unidad, suelen ser bastante flexibles. Es decir, podemos tener resultados diferentes según el entorno.
+    </p><br>
+    <h3>Ejemplos</h3>
+    <ul>
+        <li> <strong> em</strong> ----> Tamaño de letra del elemento padre, en el caso de propiedades tipográficas como font-size, y tamaño de la fuente del propio elemento 
+            en el caso de otras propiedades, como width. Si se aumenta el tamaño de la letra, el div se aumenta de igualmanera</li>
+        <li> <strong> vw</strong> ----> dependiendo el valor sera el porcentaje de la ventana grafia, por ejempolo si el valor de un div es 30 vw, su valor sera el 30% de la pantalla
+            eso lo hace responsivo ya que dependiendo de la pantalla sera el valor del 30% del div</li>
+    </ul>
+    <div id="contenedor_principal">
+        <div class="rec px">200 px de ancho</div>
+        <div class="rec vw">20vw de ancho</div>
+        <div class="rec em">15em de ancho</div>
+    </div>
+</body>
+</html>
