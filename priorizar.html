@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="priorizar.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2 class= "Texto-Azul Texto-Rojo">Priorizar Estilos</h2>
+    <p>A medida de que vayamos creando estructuras complejas en html, frecuentemente ocuparemos asignar varios estilos a un mismo elemento, asi que es importante saber como
+        priorizar los estilos de los elementos.
+    </p>
+    <p>Ejemplo: Si yo le asigno dos clases al elemento h2 estas deberan ir en el mismo metodo class solo separadas por un espacio, estas dos clases tendran conflicto
+        ya que no pueden aplicarse 2 estilos a la vez, entonces alguna de las 2 tendra una prioridad. Sorprendentemente en HTML no importa el orden de las clases, asi que 
+        si colocas una clase primero y luego la otra no se priorizará por orden. Es en CSS donde la prioridad hace efecto, ya que CSS toma la ultima clase que se
+        encuentre en el archivo CSS.
+    </p>
+    <p><strong>Si los estilos son distintos en el selector, (un estilo con selector de tipo y otro estilo con selector de clase) CSS le dara prioridad
+        al selector mas especifico (en este caso el de clase) sin importar su orden en la hoja de estilo CSS
+    </strong></p>
+    </body>
+</html>
